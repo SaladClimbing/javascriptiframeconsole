@@ -4,9 +4,14 @@
 	<title>Nothing To See Here</title>
 </head>
 <body style="margin:0px;">
-	<div> 
-    <object type="text/html" data="https://stackoverflow.com/questions/18145273/how-to-load-an-external-webpage-into-a-div-of-a-html-page?scrlybrkr" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
-    </object>
- </div>
+	<div id="content"></div>
 </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+   $('#content').load("https://www.tutorialspoint.com/How-to-load-external-HTML-into-a-div-using-jQuery");
+
+});
+</script>
 </html>
