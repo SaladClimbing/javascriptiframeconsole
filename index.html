@@ -4,13 +4,13 @@
 	<title>Nothing To See Here</title>
 </head>
 <body style="margin:0px;">
-	<div id="content"></div>
+	<iframe id="iframe" name="myIframe" frameborder="5" width="500" height="300"></iframe>
 </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
    
-   $('#content').load("https://www.tutorialspoint.com/How-to-load-external-HTML-into-a-div-using-jQuery");
+   $('#iframe').attr('src', 'https://www.qries.com');
 
 });
 </script>
